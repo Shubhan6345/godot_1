@@ -10,10 +10,13 @@ config_version=5
 
 [application]
 
-config/name="it beginss"
-config/features=PackedStringArray("4.5", "Mobile")
-config/icon="res://icon.svg"
+config/name="2D_Car"
+run/main_scene="res://scenes/world.tscn"
+config/features=PackedStringArray("4.5")
+config/icon="res://icon.png"
 
 [rendering]
 
-renderer/rendering_method="mobile"
+environment/defaults/default_environment="res://default_env.tres"
+quality/driver/driver_name="GLES2"
+vram_compression/import_etc=true
